@@ -1,0 +1,11 @@
+#SECRETS 
+.streamlit/secrets.toml
+
+#VIRTUAL ENVIRONMENT
+.venv/
+
+#PYTHON CACHE
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
