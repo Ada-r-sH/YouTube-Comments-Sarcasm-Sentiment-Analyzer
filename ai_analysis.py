@@ -8,11 +8,9 @@ from groq import Groq
 MAX_LENGTH = 100
 sentiment_decoder = {0: "Negative", 1: "Neutral", 2: "Positive"}
 
-try:
-    groq_client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-except Exception as e:
-    st.error(f"Groq API Key missing. Error: {e}")
-    st.stop()
+
+groq_client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+
 
 @st.cache_resource
 def load_ai_assets():
