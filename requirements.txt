@@ -3,4 +3,6 @@ pandas
 numpy
 google-api-python-client
 groq
-tensorflow-cpu==2.15.0
+tensorflow-cpu>=2.16.1
+scipy
+protobuf==3.20.*
